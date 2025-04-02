@@ -8,10 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview --port 5001 --strictPort",
-    "serve":"vite preview --port 5001 --strictPort"
+    "serve": "vite preview --port 5001 --strictPort"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "jotai": "^2.12.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

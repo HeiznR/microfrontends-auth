@@ -9,9 +9,10 @@ export default defineConfig({
       name: "remote_app",
       filename: "remoteEntry.js",
       exposes: {
-        "./LoginForm": "./src/components/auth/auth.tsx",
+        "./Auth": "./src/components/auth/auth.tsx",
+        "./Store": "./src/store/index.ts",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "jotai"],
     }),
   ],
   build: {

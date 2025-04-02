@@ -1,21 +1,20 @@
-import { useState } from "react";
-
 import "./App.css";
+import Auth from "./components/auth/auth";
 
-import Button from "./Button";
+import useInput from "./store";
 
 function App() {
-  const [count, setCount] = useState<number>(0);
-
+  const [value, setValue] = useInput();
   return (
     <div className="App">
       <h1>Remote Application</h1>
-      <Button />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Auth />
+      <input
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+        }}
+      />
     </div>
   );
 }
