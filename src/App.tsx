@@ -1,7 +1,6 @@
-import "./App.css";
 import Auth from "./components/auth/auth";
-
 import useInput from "./store";
+import "./App.css";
 
 function App() {
   const [value, setValue] = useInput();
