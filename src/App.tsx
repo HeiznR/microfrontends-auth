@@ -1,5 +1,5 @@
 import Auth from "./components/auth/auth";
-import useInput from "./store";
+import { useInput } from "./store";
 import "./App.css";
 
 function App() {

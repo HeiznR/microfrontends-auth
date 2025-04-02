@@ -1,4 +1,4 @@
-import useInput from "../../store";
+import { useInput } from "../../store";
 // import { useMutation, useQueryClient } from "@tanstack/react-query";
 // import { signupJWT, loginJWT } from "../../api/authFetch";
 
